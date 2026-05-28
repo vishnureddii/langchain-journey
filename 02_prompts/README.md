@@ -27,6 +27,11 @@ Streamlit | PromptTemplate
  
 ## Run The App
 streamlit run research_tool.py
+
+## App Screenshot
+<img width="960" height="335" alt="Screenshot 2026-05-29 005408" src="https://github.com/user-attachments/assets/fdade16a-e588-4de0-b5b7-36aaa47bf78d" />
+
+
  
 ## Key Insight
 Dynamic prompts = reusable AI components
