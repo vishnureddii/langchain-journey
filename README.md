@@ -1,4 +1,3 @@
-# langchain-journey
 # LangChain Journey 🚀
 ## DB Developer → AI Engineer
  
