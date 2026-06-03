@@ -1,13 +1,20 @@
 from fastapi import FastAPI
+from Chatbot.Chatbot import get_response   # ✅ corrected import
 
 app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message": "LangChain App is running on Vercel!"}
-    
-# ✅ handle favicon (VERY IMPORTANT for Vercel)
+    return {"message": "Chatbot API running ✅"}
+
+@app.get("/chat")
+def chat(query: str):
+    try:
+        response = get_response(query)
+        return {"response": response}
+    except Exception as e:
+        return {"error": str(e)}
+
 @app.get("/favicon.ico")
 def favicon():
-    return JSONResponse(content={}, status_code=204)
-
+    return {}
