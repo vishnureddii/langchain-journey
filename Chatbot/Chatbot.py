@@ -6,9 +6,20 @@ from dotenv import load_dotenv
 load_dotenv()
  
 # Page config
-st.set_page_config(page_title="AI Chatbot",
-                   page_icon="🤖")
+st.set_page_config(
+    page_title="Vishnu's AI Assistant",
+    page_icon="🤖",
+    layout="centered"
+)
+
 st.title("🤖 AI Chatbot")
+
+st.sidebar.markdown("""
+### About
+Built by Vishnu Vardhan Reddy Thuniki
+🔗 [GitHub](https://github.com/vishnureddii)
+🔗 [LinkedIn](https://www.linkedin.com/in/vishnu-vardhan-reddy-thuniki-659701165/)
+""")
  
 # Initialize chat history
 # This is the KEY concept
